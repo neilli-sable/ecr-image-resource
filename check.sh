@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "{\"version\": 1234}"
+echo "[{\"id\": \"1234\"}]"
