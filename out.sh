@@ -1,5 +1,11 @@
 #!/bin/bash
+
+exec 3>&1 # make stdout available as fd 3 for the result
+exec 1>&2 # redirect all output to stderr for logging
+
 ls -la
+
+echo "{\"version\": {\"id\":\"1234\"},\"metadata\":[{\"name\":\"id\",\"value\":\"3\"},{\"name\":\"processed\",\"value\":\"1\"}]}" >&3
 
 # echo $0
 # echo $1
