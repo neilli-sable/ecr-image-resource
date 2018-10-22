@@ -1,7 +1,8 @@
 #!/bin/bash
+ls -la
 
-echo $0
-echo $1
+# echo $0
+# echo $1
 
 # docker 立ち上げ
 # dockerd --data-root /scratch/docker &
