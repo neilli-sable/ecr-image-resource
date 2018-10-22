@@ -1,12 +1,10 @@
 #!/bin/bash
 
-echo "\n0\n"
 echo $0
-echo "\n1\n"
 echo $1
 
 # docker 立ち上げ
-dockerd --data-root /scratch/docker &
+# dockerd --data-root /scratch/docker &
 
 # ecrログイン
 # in: awsのcredential情報
